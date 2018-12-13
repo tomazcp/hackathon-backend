@@ -121,4 +121,5 @@ public class Patient extends AbstractModel {
                 ", professional=" + professional +
                 "} " + super.toString();
     }
+
 }

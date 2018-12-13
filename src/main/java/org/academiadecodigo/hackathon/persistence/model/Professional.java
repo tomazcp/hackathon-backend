@@ -108,4 +108,6 @@ public class Professional extends AbstractModel {
     public void setPatients(Patient patient) {
         this.patients = patients;
     }
+
+
 }

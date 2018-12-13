@@ -95,6 +95,9 @@ public class AbstractModel implements Model {
         this.updateTime = updateTime;
     }
 
+    public void removeAppointment(Appointment appointment) {
+    }
+
     /**
      * @see Object#toString()
      */

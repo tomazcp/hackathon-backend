@@ -1,6 +1,10 @@
 package org.academiadecodigo.hackathon.service.patient;
 
 
+import org.academiadecodigo.hackathon.persistence.model.Appointment;
+import org.academiadecodigo.hackathon.persistence.model.Patient;
+import org.academiadecodigo.hackathon.persistence.model.Professional;
+
 import java.util.Date;
 
 public interface PatientService {
@@ -11,7 +15,7 @@ public interface PatientService {
 
     void delete(Integer id);
     
-    int addAppointment(Patient patientId, Professional professionalId, Date date);
+    int addAppointment(Integer patientId, Integer professionalId, Date date);
     
-    void removeAppointment(Patient patientId, Professional professionalId, Appointment appointmentId);
+    void removeAppointment(Integer patientId, Integer professionalId, Integer appointmentId);
 }

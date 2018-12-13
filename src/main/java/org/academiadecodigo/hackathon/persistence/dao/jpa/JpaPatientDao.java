@@ -1,6 +1,7 @@
 package org.academiadecodigo.hackathon.persistence.dao.jpa;
 
 import org.academiadecodigo.hackathon.persistence.dao.PatientDao;
+import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.springframework.stereotype.Repository;
 
 @Repository

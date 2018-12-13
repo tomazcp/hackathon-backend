@@ -3,6 +3,9 @@ package org.academiadecodigo.hackathon.service.patient;
 import org.academiadecodigo.hackathon.persistence.dao.AppointmentDao;
 import org.academiadecodigo.hackathon.persistence.dao.PatientDao;
 import org.academiadecodigo.hackathon.persistence.dao.ProfessionalDao;
+import org.academiadecodigo.hackathon.persistence.model.Appointment;
+import org.academiadecodigo.hackathon.persistence.model.Patient;
+import org.academiadecodigo.hackathon.persistence.model.Professional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -50,7 +53,7 @@ public class PatientServiceImpl implements PatientService {
 
     @Transactional
     @Override
-    public int addAppointment(Patient patientId, Professional professionalId, Date date) {
+    public int addAppointment(Integer patientId, Integer professionalId, Date date) {
         Patient patient = patientDao.findById(patientId);
         Professional professional = professionalDao.findById(professionalId);
         Appointment appointment = new Appointment(patient, professional);
@@ -59,7 +62,7 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public void removeAppointment(Patient patientId, Professional professionalId, Appointment appointmentId) {
+    public void removeAppointment(Integer patientId, Integer professionalId, Integer appointmentId) {
         Patient patient = patientDao.findById(patientId);
         Professional professional = professionalDao.findById(professionalId);
         Appointment appointment = appointmentDao.findById(appointmentId);

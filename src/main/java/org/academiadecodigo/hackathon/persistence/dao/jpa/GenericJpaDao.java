@@ -1,13 +1,11 @@
 package org.academiadecodigo.hackathon.persistence.dao.jpa;
 
 import org.academiadecodigo.hackathon.persistence.dao.Dao;
+import org.academiadecodigo.hackathon.persistence.model.Model;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-/**
- * Created by codecadet on 13/12/2018.
- */
 public abstract class GenericJpaDao<T extends Model> implements Dao<T> {
 
     protected Class<T> modelType;

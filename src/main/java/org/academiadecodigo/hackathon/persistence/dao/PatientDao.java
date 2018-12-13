@@ -1,8 +1,7 @@
 package org.academiadecodigo.hackathon.persistence.dao;
 
-/**
- * Created by codecadet on 13/12/2018.
- */
+import org.academiadecodigo.hackathon.persistence.model.Patient;
+
 public interface PatientDao extends Dao<Patient> {
 
 }
