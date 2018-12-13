@@ -60,6 +60,10 @@ public class Professional extends AbstractModel {
         return gender;
     }
 
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
     /**
      * Gets the email of the professional
      *

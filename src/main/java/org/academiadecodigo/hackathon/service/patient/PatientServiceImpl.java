@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class PatientServiceImpl implements PatientService {
@@ -69,5 +71,13 @@ public class PatientServiceImpl implements PatientService {
         patient.removeAppointment(appointment);
         professional.removeAppointment(appointment);
 
+    }
+
+    @Override
+    public List<Appointment> listAppointments(Integer id) {
+
+        Patient patient = patientDao.findById(id);
+
+        return new ArrayList<>(patientDao.findById(id).getAppointments());
     }
 }
