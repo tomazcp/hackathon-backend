@@ -1,0 +1,6 @@
+org/academiadecodigo/hackathon/persistence/model/Professional.class
+org/academiadecodigo/hackathon/persistence/model/State.class
+org/academiadecodigo/hackathon/persistence/model/Gender.class
+org/academiadecodigo/hackathon/persistence/model/Patient.class
+org/academiadecodigo/hackathon/persistence/model/Model.class
+org/academiadecodigo/hackathon/persistence/model/AbstractModel.class
