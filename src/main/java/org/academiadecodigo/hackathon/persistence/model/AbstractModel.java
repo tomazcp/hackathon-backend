@@ -5,6 +5,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * A generic model entity to be used as a base for concrete types of models
@@ -24,6 +25,8 @@ public class AbstractModel implements Model {
 
     @UpdateTimestamp
     private Date updateTime;
+
+    public List<Appointment> appointments;
 
     /**
      * @see Model#getId()
@@ -96,6 +99,10 @@ public class AbstractModel implements Model {
     }
 
     public void removeAppointment(Appointment appointment) {
+    }
+
+    public List<Appointment> getAppointments() {
+        return appointments;
     }
 
     /**
