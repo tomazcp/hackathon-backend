@@ -1,4 +1,4 @@
-package org.academiadecodigo.hackathon.service.patientService;
+package org.academiadecodigo.hackathon.service.patient;
 
 
 import java.util.Date;

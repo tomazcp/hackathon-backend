@@ -1,4 +1,4 @@
-package org.academiadecodigo.hackathon.service.patientService;
+package org.academiadecodigo.hackathon.service.patient;
 
 import org.academiadecodigo.hackathon.persistence.dao.AppointmentDao;
 import org.academiadecodigo.hackathon.persistence.dao.PatientDao;

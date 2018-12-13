@@ -1,4 +1,4 @@
-package org.academiadecodigo.hackathon.service.professionalService;
+package org.academiadecodigo.hackathon.service.professional;
 
 /**
  * Created by codecadet on 13/12/2018.
