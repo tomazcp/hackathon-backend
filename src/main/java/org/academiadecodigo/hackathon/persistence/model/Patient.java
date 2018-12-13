@@ -1,8 +1,6 @@
 package org.academiadecodigo.hackathon.persistence.model;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "patient")
@@ -10,9 +8,8 @@ public class Patient extends AbstractModel {
 
     private String name;
     private String email;
-    private String phone;
     private String password;
-    private Gender gender;
+    private String gender;
     private  State state;
 
     @ManyToOne
@@ -55,24 +52,6 @@ public class Patient extends AbstractModel {
     }
 
     /**
-     * Gets the phone of the patient
-     *
-     * @return the patient phone
-     */
-    public String getPhone() {
-        return phone;
-    }
-
-    /**
-     * Sets the phone of the patient
-     *
-     * @param phone the phone to set
-     */
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    /**
      * Gets the patient professional
      *
      * @return the professional
@@ -97,11 +76,15 @@ public class Patient extends AbstractModel {
         return password;
     }
 
-    public Gender getGender() {
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -117,7 +100,6 @@ public class Patient extends AbstractModel {
                 "firstName='" + name + '\'' +
                 "gender='" + gender + '\'' +
                 ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
                 ", professional=" + professional +
                 "} " + super.toString();
     }

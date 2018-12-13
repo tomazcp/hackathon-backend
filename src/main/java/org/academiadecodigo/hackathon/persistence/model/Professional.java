@@ -1,10 +1,10 @@
 package org.academiadecodigo.hackathon.persistence.model;
 
-import javax.persistence.CascadeType;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "professional")
 public class Professional extends AbstractModel {
 
     private String firstName;

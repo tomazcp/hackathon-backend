@@ -1,4 +1,4 @@
-package org.academiadecodigo.hackathon.command;
+package org.academiadecodigo.hackathon.dto;
 
 /**
  * Created by codecadet on 13/12/2018.
@@ -8,9 +8,8 @@ public class PatientDto {
     private Integer id;
     private String name;
     private String email;
-    private String phone;
-    private Gender gender;
-    private State state;
+    private String gender;
+    //private State state;
     private String password;
 
     public Integer getId() {
@@ -37,29 +36,21 @@ public class PatientDto {
         this.email = email;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public State getState() {
+    /*public State getState() {
         return state;
     }
 
     public void setState(State state) {
         this.state = state;
-    }
+    }*/
 
     public String getPassword() {
         return password;
@@ -75,9 +66,8 @@ public class PatientDto {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
                 ", gender=" + gender +
-                ", state=" + state +
+                //", state=" + state +
                 ", password='" + password + '\'' +
                 '}';
     }
