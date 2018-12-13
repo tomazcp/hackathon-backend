@@ -37,6 +37,7 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Patient get(Integer id) {
         return patientDao.findById(id);
     }
@@ -73,11 +74,11 @@ public class PatientServiceImpl implements PatientService {
 
     }
 
-    @Override
-    public List<Appointment> listAppointments(Integer id) {
-
-        Patient patient = patientDao.findById(id);
-
-        return new ArrayList<>(patientDao.findById(id).getAppointments());
-    }
+//    @Override
+//    public List<Appointment> listAppointments(Integer id) {
+//
+//        Patient patient = patientDao.findById(id);
+//
+//        return new ArrayList<>(patient.getAppointments());
+//    }
 }

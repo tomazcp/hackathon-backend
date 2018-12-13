@@ -1,8 +1,5 @@
 package org.academiadecodigo.hackathon.dto;
 
-/**
- * Created by codecadet on 13/12/2018.
- */
 public class PatientDto {
 
     private Integer id;

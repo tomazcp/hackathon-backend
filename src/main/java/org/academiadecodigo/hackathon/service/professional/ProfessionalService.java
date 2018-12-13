@@ -1,6 +1,5 @@
 package org.academiadecodigo.hackathon.service.professional;
 
-import org.academiadecodigo.hackathon.persistence.model.Appointment;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
 
@@ -14,5 +13,5 @@ public interface ProfessionalService {
 
     List<Patient> listPatients(Integer id);
 
-    List<Appointment> listAppointments(Integer id);
+    //List<Appointment> listAppointments(Integer id);
 }
