@@ -68,6 +68,8 @@ public class PatientServiceImpl implements PatientService {
         Professional professional = professionalDao.findById(professionalId);
         Appointment appointment = new Appointment(patient, professional);
         appointment.setDate(date);
+        patient.addAppointment(appointment);
+        professional.addAppointment(appointment);
         appointmentService.saveOrUpdate(appointment);
         return appointment.getId();
     }
@@ -84,8 +86,6 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public List<Appointment> listAppointments(Integer id) {
-
-        Patient patient = patientDao.findById(id);
 
         return new ArrayList<>(patientDao.findById(id).getAppointments());
     }

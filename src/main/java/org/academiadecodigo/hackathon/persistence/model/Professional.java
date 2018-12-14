@@ -19,6 +19,11 @@ public class Professional extends AbstractModel {
             mappedBy = "professional"
     )
     private List<Patient> patients;
+
+    @OneToMany(
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL
+    )
     private List<Appointment> appointments;
 
     /**
@@ -112,6 +117,28 @@ public class Professional extends AbstractModel {
 
     public List<Appointment> getAppointments() {
         return appointments;
+    }
+
+    public void setPatients(List<Patient> patients) {
+        this.patients = patients;
+    }
+
+    public void setAppointments(List<Appointment> appointments) {
+        this.appointments = appointments;
+    }
+
+
+
+
+
+    public void addAppointment(Appointment appointment) {
+        appointments.add(appointment);
+        appointment.setProfessional(this);
+    }
+
+    public void removeAppointment(Appointment appointment) {
+        appointments.remove(appointment);
+        appointment.setProfessional(null);
     }
 
 }

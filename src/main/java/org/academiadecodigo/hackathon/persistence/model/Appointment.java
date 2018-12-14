@@ -1,10 +1,16 @@
 package org.academiadecodigo.hackathon.persistence.model;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import java.util.Date;
-
+@Entity
+@Table(name = "appointment")
 public class Appointment extends AbstractModel {
 
+    @OneToOne
     private Patient patient;
+    @OneToOne
     private Professional professional;
     private Date date;
 

@@ -28,10 +28,13 @@ public class AppointmentController {
     private PatientService patientService;
     private ProfessionalService professionalService;
     private AppointmentService appointmentService;
+
     private AppointmentDtoToAppointment appointmentDtoToAppointment;
     private AppointmentToAppointmentDto appointmentToAppointmentDto;
+
     private PatientDtoToPatient patientDtoToPatient;
     private PatientToPatientDto patientToPatientDto;
+
     private ProfessionalDtoToProfessional professionalDtoToProfessional;
     private ProfessionalToProfessionalDto professionalToProfessionalDto;
 
@@ -58,13 +61,14 @@ public class AppointmentController {
         return new ResponseEntity<>(appointmentToAppointmentDto.convert(professional.getAppointments()), HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = {"/", ""}, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST, path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<AppointmentDto> addAppointment(@RequestBody PatientDto patientDto, @RequestBody ProfessionalDto professionalDto, Date date) {
 
         Patient patient = patientService.saveOrUpdate(patientDtoToPatient.convert(patientDto));
         Professional professional = professionalService.saveOrUpdate(professionalDtoToProfessional.convert(professionalDto));
         Appointment appointment = new Appointment(patient, professional);
         appointment.setDate(date);
+        patientService.addAppointment(patient.getId(), professional.getId(), date);
 
         return new ResponseEntity<>(appointmentToAppointmentDto.convert(appointment), HttpStatus.OK);
     }

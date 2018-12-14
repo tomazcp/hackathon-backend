@@ -11,11 +11,13 @@ public class Patient extends AbstractModel {
     private String email;
     private String password;
     private String gender;
-    private  State state;
+    private State state;
 
     @ManyToOne
     private Professional professional;
 
+    @OneToMany(fetch = FetchType.EAGER,
+            cascade = CascadeType.ALL)
     private List<Appointment> appointments;
 
     /**
@@ -93,6 +95,23 @@ public class Patient extends AbstractModel {
 
     public List<Appointment> getAppointments() {
         return appointments;
+    }
+
+    public void setAppointments(List<Appointment> appointments) {
+        this.appointments = appointments;
+    }
+
+
+
+
+    public void addAppointment(Appointment appointment) {
+        appointments.add(appointment);
+        appointment.setPatient(this);
+    }
+
+    public void removeAppointment(Appointment appointment) {
+        appointments.remove(appointment);
+        appointment.setPatient(null);
     }
 
     /**

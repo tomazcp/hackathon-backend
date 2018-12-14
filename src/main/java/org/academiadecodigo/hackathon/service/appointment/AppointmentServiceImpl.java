@@ -10,10 +10,6 @@ public class AppointmentServiceImpl implements AppointmentService {
 
     private AppointmentDao appointmentDao;
 
-    public AppointmentDao getAppointmentDao() {
-        return appointmentDao;
-    }
-
     @Autowired
     public void setAppointmentDao(AppointmentDao appointmentDao) {
         this.appointmentDao = appointmentDao;

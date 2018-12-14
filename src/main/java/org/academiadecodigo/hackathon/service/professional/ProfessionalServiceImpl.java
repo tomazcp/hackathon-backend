@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -32,17 +33,16 @@ public class ProfessionalServiceImpl implements ProfessionalService {
 
     @Override
     public List<Patient> listPatients(Integer id) {
-
-        Professional professional = professionalDao.findById(id);
-
         return new ArrayList<>(professionalDao.findById(id).getPatients());
     }
 
     @Override
     public List<Appointment> listAppointments(Integer id) {
-
-        Professional professional = professionalDao.findById(id);
-
         return new ArrayList<>(professionalDao.findById(id).getAppointments());
+    }
+
+    @Override
+    public int addAppointment(Integer patientId, Integer professionalId, Date date) {
+      return 0;
     }
 }
