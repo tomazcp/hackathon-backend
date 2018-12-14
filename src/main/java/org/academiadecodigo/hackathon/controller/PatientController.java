@@ -3,7 +3,9 @@ package org.academiadecodigo.hackathon.controller;
 import org.academiadecodigo.hackathon.converters.PatientDtoToPatient;
 import org.academiadecodigo.hackathon.converters.PatientToPatientDto;
 import org.academiadecodigo.hackathon.dto.PatientDto;
+import org.academiadecodigo.hackathon.dto.ProfessionalDto;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
+import org.academiadecodigo.hackathon.persistence.model.Professional;
 import org.academiadecodigo.hackathon.service.patient.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -62,5 +64,20 @@ public class PatientController {
 
         patientService.saveOrUpdate(patientDtoToPatient.convert(patientDto));
         return new ResponseEntity<>(patientDto, HttpStatus.OK);
+    }
+
+    @GetMapping(
+            path = {"/{id}"},
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<PatientDto> showProfessional(@PathVariable Integer id) {
+
+         Patient patient = patientService.get(id);
+
+        if (patient == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(patientToPatientDto.convert(patient), HttpStatus.OK);
     }
 }
