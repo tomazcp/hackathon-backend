@@ -6,6 +6,7 @@ import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,21 +22,25 @@ public class ProfessionalServiceImpl implements ProfessionalService {
         this.professionalDao = professionalDao;
     }
 
+    @Transactional
     @Override
     public Professional get(Integer id) {
         return professionalDao.findById(id);
     }
 
+    @Transactional
     @Override
     public Professional saveOrUpdate(Professional professional) {
         return professionalDao.saveOrUpdate(professional);
     }
 
+    @Transactional
     @Override
     public List<Patient> listPatients(Integer id) {
         return new ArrayList<>(professionalDao.findById(id).getPatients());
     }
 
+    @Transactional
     @Override
     public List<Professional> listProfessionals() {
 
@@ -43,11 +48,13 @@ public class ProfessionalServiceImpl implements ProfessionalService {
 
     }
 
+    @Transactional
     @Override
     public List<Appointment> listAppointments(Integer id) {
         return new ArrayList<>(professionalDao.findById(id).getAppointments());
     }
 
+    @Transactional
     @Override
     public int addAppointment(Integer patientId, Integer professionalId, Date date) {
       return 0;

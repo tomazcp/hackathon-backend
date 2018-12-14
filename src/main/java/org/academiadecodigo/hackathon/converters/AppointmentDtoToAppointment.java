@@ -20,7 +20,7 @@ public class AppointmentDtoToAppointment extends AbstractConverter<AppointmentDt
     public Appointment convert(AppointmentDto appointmentDto) {
 
         Appointment appointment = (appointmentDto.getId() != null ? appointmentService.get(appointmentDto.getId())
-                : new Appointment(appointmentDto.getPatient(), appointmentDto.getProfessional()));
+                : new Appointment(appointmentService.get(appointmentDto.getId()).getPatient(), appointmentService.get(appointmentDto.getId()).getProfessional()));
 
         appointment.setDate(appointmentDto.getDate());
 
