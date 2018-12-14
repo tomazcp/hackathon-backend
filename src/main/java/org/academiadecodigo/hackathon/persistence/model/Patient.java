@@ -1,6 +1,7 @@
 package org.academiadecodigo.hackathon.persistence.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "patient")
@@ -14,6 +15,8 @@ public class Patient extends AbstractModel {
 
     @ManyToOne
     private Professional professional;
+
+    private List<Appointment> appointments;
 
     /**
      * Gets the name of the patient
@@ -86,6 +89,10 @@ public class Patient extends AbstractModel {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public List<Appointment> getAppointments() {
+        return appointments;
     }
 
     /**

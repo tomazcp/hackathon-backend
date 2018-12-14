@@ -6,6 +6,7 @@ import org.academiadecodigo.hackathon.persistence.dao.ProfessionalDao;
 import org.academiadecodigo.hackathon.persistence.model.Appointment;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
+import org.academiadecodigo.hackathon.service.appointment.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,6 +21,7 @@ public class PatientServiceImpl implements PatientService {
     private PatientDao patientDao;
     private ProfessionalDao professionalDao;
     private AppointmentDao appointmentDao;
+    private AppointmentService appointmentService;
 
     @Autowired
     public void setPatientDao(PatientDao patientDao) {
@@ -34,6 +36,11 @@ public class PatientServiceImpl implements PatientService {
     @Autowired
     public void setAppointmentDao(AppointmentDao appointmentDao) {
         this.appointmentDao = appointmentDao;
+    }
+
+    @Autowired
+    public void setAppointmentService(AppointmentService appointmentService) {
+        this.appointmentService = appointmentService;
     }
 
     @Override
@@ -61,6 +68,7 @@ public class PatientServiceImpl implements PatientService {
         Professional professional = professionalDao.findById(professionalId);
         Appointment appointment = new Appointment(patient, professional);
         appointment.setDate(date);
+        appointmentService.saveOrUpdate(appointment);
         return appointment.getId();
     }
 
@@ -74,11 +82,11 @@ public class PatientServiceImpl implements PatientService {
 
     }
 
-//    @Override
-//    public List<Appointment> listAppointments(Integer id) {
-//
-//        Patient patient = patientDao.findById(id);
-//
-//        return new ArrayList<>(patient.getAppointments());
-//    }
+    @Override
+    public List<Appointment> listAppointments(Integer id) {
+
+        Patient patient = patientDao.findById(id);
+
+        return new ArrayList<>(patientDao.findById(id).getAppointments());
+    }
 }

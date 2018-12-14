@@ -19,6 +19,7 @@ public class Professional extends AbstractModel {
             mappedBy = "professional"
     )
     private List<Patient> patients;
+    private List<Appointment> appointments;
 
     /**
      * Gets the first name of the professional
@@ -109,9 +110,8 @@ public class Professional extends AbstractModel {
         return patients;
     }
 
-    public void setPatients(Patient patient) {
-        this.patients = patients;
+    public List<Appointment> getAppointments() {
+        return appointments;
     }
-
 
 }
