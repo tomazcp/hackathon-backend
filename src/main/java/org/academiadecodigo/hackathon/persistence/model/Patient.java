@@ -104,4 +104,21 @@ public class Patient extends AbstractModel {
                 "} " + super.toString();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Patient patient = (Patient) o;
+
+        if (!getEmail().equals(patient.getEmail())) return false;
+        return getPassword().equals(patient.getPassword());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getEmail().hashCode();
+        result = 31 * result + getPassword().hashCode();
+        return result;
+    }
 }

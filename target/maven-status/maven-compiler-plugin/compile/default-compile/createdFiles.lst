@@ -3,6 +3,7 @@ org/academiadecodigo/hackathon/persistence/model/Gender.class
 org/academiadecodigo/hackathon/service/questionnaire/QuestionnaireServiceImpl.class
 org/academiadecodigo/hackathon/converters/PatientDtoToPatient.class
 org/academiadecodigo/hackathon/persistence/model/Model.class
+org/academiadecodigo/hackathon/service/session/SessionService.class
 org/academiadecodigo/hackathon/persistence/dao/ProfessionalDao.class
 org/academiadecodigo/hackathon/questionnaire/Questionnaire.class
 org/academiadecodigo/hackathon/persistence/dao/jpa/JpaProfessionalDao.class
@@ -14,6 +15,7 @@ org/academiadecodigo/hackathon/dto/PatientDto.class
 org/academiadecodigo/hackathon/service/professional/ProfessionalServiceImpl.class
 org/academiadecodigo/hackathon/controller/auth/AuthController.class
 org/academiadecodigo/hackathon/persistence/model/Professional.class
+org/academiadecodigo/hackathon/service/session/SessionServiceImpl.class
 org/academiadecodigo/hackathon/persistence/dao/PatientDao.class
 org/academiadecodigo/hackathon/converters/PatientToPatientDto.class
 org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.class

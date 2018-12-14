@@ -9,6 +9,8 @@ public interface PatientService {
 
     Patient get(Integer id);
 
+    Patient get(String email);
+
     Patient saveOrUpdate(Patient patient);
 
     void delete(Integer id);
@@ -16,6 +18,7 @@ public interface PatientService {
     int addAppointment(Integer patientId, Integer professionalId, Date date);
     
     void removeAppointment(Integer patientId, Integer professionalId, Integer appointmentId);
+
 
     //List<Appointment> listAppointments(Integer id);
 }

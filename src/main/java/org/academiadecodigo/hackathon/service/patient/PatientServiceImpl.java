@@ -42,6 +42,12 @@ public class PatientServiceImpl implements PatientService {
         return patientDao.findById(id);
     }
 
+    @Override
+    public Patient get(String email) {
+
+        return patientDao.getByEmail(email);
+    }
+
     @Transactional
     @Override
     public Patient saveOrUpdate(Patient patient) {
