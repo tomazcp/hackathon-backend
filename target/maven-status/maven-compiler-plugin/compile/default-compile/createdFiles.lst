@@ -30,6 +30,7 @@ org/academiadecodigo/hackathon/persistence/model/State.class
 org/academiadecodigo/hackathon/questionnaire/Question.class
 org/academiadecodigo/hackathon/persistence/dao/jpa/JpaAppointmentDao.class
 org/academiadecodigo/hackathon/service/professional/ProfessionalService.class
+org/academiadecodigo/hackathon/controller/PatientController.class
 org/academiadecodigo/hackathon/converters/AbstractConverter.class
 org/academiadecodigo/hackathon/persistence/dao/jpa/JpaPatientDao.class
 org/academiadecodigo/hackathon/converters/AppointmentDtoToAppointment.class

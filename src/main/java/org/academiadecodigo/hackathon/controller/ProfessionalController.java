@@ -2,6 +2,7 @@ package org.academiadecodigo.hackathon.controller;
 
 import org.academiadecodigo.hackathon.converters.ProfessionalDtoToProfessional;
 import org.academiadecodigo.hackathon.converters.ProfessionalToProfessionalDto;
+import org.academiadecodigo.hackathon.dto.PatientDto;
 import org.academiadecodigo.hackathon.dto.ProfessionalDto;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
 import org.academiadecodigo.hackathon.service.professional.ProfessionalService;
@@ -9,8 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,4 +75,5 @@ public class ProfessionalController {
 
         return new ResponseEntity<>(professionalToProfessionalDto.convert(professional), HttpStatus.OK);
     }
+
 }
