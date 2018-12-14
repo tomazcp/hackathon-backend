@@ -2,184 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a0ba4c-cd16-4227-8eff-917d247781a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/hackathon_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/hackathon_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_196.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_5_3_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_11_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackathon.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/PatientController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/ProfessionalController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/appointment/AppointmentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/converters/AppointmentDtoToAppointment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/converters/AppointmentToAppointmentDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/converters/ProfessionalDtoToProfessional.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/converters/ProfessionalToProfessionalDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/dto/AppointmentDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/dto/ProfessionalDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/appointment/AppointmentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/appointment/AppointmentServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/test-data.sql" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hackathon.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/converters/AbstractConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/converters/PatientDtoToPatient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/dto/PatientDto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/AppointmentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/Dao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/ProfessionalDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/GenericJpaDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaAppointmentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaProfessionalDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/AbstractModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/Appointment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/Gender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/Model.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/Professional.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/questionnaire/Question.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/questionnaire/Questionnaire.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/professional/ProfessionalService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/professional/ProfessionalServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/questionnaire/QuestionnaireService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/questionnaire/QuestionnaireServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/session/SessionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/session/SessionServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/hackathon.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/converters/AbstractConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/converters/PatientDtoToPatient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/dto/PatientDto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/AppointmentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/Dao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/ProfessionalDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/GenericJpaDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaAppointmentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaProfessionalDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/AbstractModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/Appointment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/Gender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/Model.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/Professional.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/questionnaire/Question.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/questionnaire/Questionnaire.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/professional/ProfessionalService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/professional/ProfessionalServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/questionnaire/QuestionnaireService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/questionnaire/QuestionnaireServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/session/SessionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/session/SessionServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/byte-buddy-1.8.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.5.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/h2-1.4.196.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/hibernate-c3p0-5.3.6.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.3.6.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.2.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.0.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.23.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-2.6.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.11.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/lib/validation-api-2.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/spring/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/spring/persistence/persistence-dev.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/spring/persistence/persistence-prod.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/spring/spring-config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/auth/AuthController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/AuthController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/controller/auth/AuthController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/controller/auth/AuthController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/converters/PatientToPatientDto.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/converters/PatientToPatientDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/PatientDao.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/PatientDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaPatientDao.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaPatientDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/Patient.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/persistence/model/Patient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/patient/PatientService.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/patient/PatientService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/controller/auth/AuthController.class" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/controller/auth/AuthController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/converters/PatientToPatientDto.class" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/converters/PatientToPatientDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/PatientDao.class" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/PatientDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaPatientDao.class" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/dao/jpa/JpaPatientDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/Patient.class" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/persistence/model/Patient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/patient/PatientService.class" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/patient/PatientService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.class" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT/WEB-INF/classes/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/AbstractModel.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/AbstractModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/Appointment.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/Appointment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/Patient.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/Patient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/Professional.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/persistence/model/Professional.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/appointment/AppointmentController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/appointment/AppointmentController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientService.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/professional/ProfessionalService.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/professional/ProfessionalService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/professional/ProfessionalServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/professional/ProfessionalServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence-prod.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence-prod.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,11 +16,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SessionService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SessionService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/session/SessionService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatientService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatientServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppointmentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/appointment/AppointmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="58" column="79" lean-forward="false" selection-start-line="58" selection-start-column="79" selection-end-line="58" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppointmentDto.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/dto/AppointmentDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -225,6 +89,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/ProfessionalController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/PatientController.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/appointment/AppointmentController.java" />
       </list>
     </option>
   </component>
@@ -475,6 +341,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackathon-backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackathon-backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackathon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appointment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -908,10 +838,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3819000" />
+    <option name="totallyTimeSpent" value="6422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -933,7 +864,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.79096043" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35367233" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -974,13 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/appointment/AppointmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/PatientController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1011,26 +935,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/appointment/AppointmentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,6 +947,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,6 +962,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,6 +992,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,6 +1014,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1123,6 +1036,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/service/patient/PatientServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/controller/appointment/AppointmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="58" column="79" lean-forward="false" selection-start-line="58" selection-start-column="79" selection-end-line="58" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/hackathon/dto/AppointmentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -21,10 +21,8 @@ public interface PatientService {
     
     void removeAppointment(Integer patientId, Integer professionalId, Integer appointmentId);
 
-<<<<<<< HEAD
+
 
     //List<Appointment> listAppointments(Integer id);
-=======
     List<Appointment> listAppointments(Integer id);
->>>>>>> 6daebe8aa03ccbf849e8d252f4187c6416beb2b4
 }
