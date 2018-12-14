@@ -20,6 +20,12 @@ public class Professional extends AbstractModel {
     )
     private List<Patient> patients;
 
+    @OneToMany(
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL
+    )
+    private List<Appointment> appointments;
+
     /**
      * Gets the first name of the professional
      *
@@ -91,12 +97,26 @@ public class Professional extends AbstractModel {
         return patients;
     }
 
-    public void setPatients(Patient patient) {
-        this.patients = patients;
+    public List<Appointment> getAppointments() {
+        return appointments;
     }
 
     public String getSuperPower() {
         return superPower;
+    }
+
+    public void setAppointments(List<Appointment> appointments) {
+        this.appointments = appointments;
+    }
+
+    public void addAppointment(Appointment appointment) {
+        appointments.add(appointment);
+        appointment.setProfessional(this);
+    }
+
+    public void removeAppointment(Appointment appointment) {
+        appointments.remove(appointment);
+        appointment.setProfessional(null);
     }
 
     public void setPatients(List<Patient> patients) {
