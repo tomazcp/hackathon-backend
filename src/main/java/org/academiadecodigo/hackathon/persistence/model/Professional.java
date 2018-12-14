@@ -1,6 +1,7 @@
 package org.academiadecodigo.hackathon.persistence.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,13 +19,13 @@ public class Professional extends AbstractModel {
             cascade = CascadeType.ALL,
             mappedBy = "professional"
     )
-    private List<Patient> patients;
+    private List<Patient> patients = new ArrayList<>();
 
     @OneToMany(
             fetch = FetchType.LAZY,
             cascade = CascadeType.ALL
     )
-    private List<Appointment> appointments;
+    private List<Appointment> appointments = new ArrayList<>();
 
     /**
      * Gets the first name of the professional
@@ -111,7 +112,6 @@ public class Professional extends AbstractModel {
 
     public void addAppointment(Appointment appointment) {
         appointments.add(appointment);
-        appointment.setProfessional(this);
     }
 
     public void removeAppointment(Appointment appointment) {

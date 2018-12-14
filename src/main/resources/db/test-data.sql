@@ -6,3 +6,8 @@ INSERT INTO professional(ID, CREATIONTIME, UPDATETIME, VERSION, NAME, GENDER, EM
   (3, TIMESTAMP '2018-12-14 01:45:56.482', TIMESTAMP '2018-12-14 08:45:56.482', 0, 'Bruno', 'male', 'mail@gmail.com', '777888', 'absassa'),
   (4, TIMESTAMP '2018-12-14 01:45:56.482', TIMESTAMP '2018-12-14 08:45:56.482', 0, 'Sara', 'female', 'mail@gmail.com', '777888', 'absassa');
 
+INSERT INTO appointment(id, creationTime, updateTime, version, date, patient_id, professional_id) VALUES
+  (1, TIMESTAMP '2018-12-14 01:45:56.468', TIMESTAMP '2018-12-14 08:45:56.468', 0, "2018-12-14", 1, 1),
+  (2, TIMESTAMP '2018-12-14 01:45:56.468', TIMESTAMP '2018-12-14 08:45:56.468', 0, "2018-12-16", 1, 1),
+  (3, TIMESTAMP '2018-12-14 01:45:56.468', TIMESTAMP '2018-12-14 08:45:56.468', 0, "2018-12-20", 1, 1);
+

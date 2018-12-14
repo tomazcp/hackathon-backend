@@ -17,7 +17,7 @@ public interface PatientService {
 
     void delete(Integer id);
     
-    int addAppointment(Integer patientId, Integer professionalId, String date);
+    //int addAppointment(Integer patientId, Integer professionalId, String date);
     
     void removeAppointment(Integer patientId, Integer professionalId, Integer appointmentId);
 

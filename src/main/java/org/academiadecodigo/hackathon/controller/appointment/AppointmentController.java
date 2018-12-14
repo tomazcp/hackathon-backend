@@ -8,6 +8,7 @@ import org.academiadecodigo.hackathon.persistence.model.Professional;
 import org.academiadecodigo.hackathon.service.appointment.AppointmentService;
 import org.academiadecodigo.hackathon.service.patient.PatientService;
 import org.academiadecodigo.hackathon.service.professional.ProfessionalService;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -49,6 +50,21 @@ public class AppointmentController {
         return new ResponseEntity<>(appointmentToAppointmentDto.convert(patient.getAppointments()), HttpStatus.OK);
     }
 
+
+
+    @GetMapping(
+            path = "/list",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<List<AppointmentDto>> getAllAppointments() {
+
+        List<Appointment> appointments = professionalService.listAppointments(1);
+        return new ResponseEntity<>(appointmentToAppointmentDto.convert(appointments), HttpStatus.OK);
+    }
+
+
+
+
     @RequestMapping(method = RequestMethod.GET, path = "/professional/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<AppointmentDto>> showProfessionalAppointment(@PathVariable Integer professionalId) {
 
@@ -56,17 +72,32 @@ public class AppointmentController {
         return new ResponseEntity<>(appointmentToAppointmentDto.convert(professional.getAppointments()), HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<AppointmentDto> addAppointment(@RequestBody AppointmentDto appointmentDto, String date) {
 
-        Patient patient = patientService.get(appointmentDto.getPatientId());
+
+
+
+    @RequestMapping(method = RequestMethod.POST, path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<AppointmentDto> addAppointment(@RequestBody AppointmentDto appointmentDto) {
+
         Professional professional = professionalService.get(appointmentDto.getProfessionalId());
-        Appointment appointment = new Appointment(patient, professional);
-        appointment.setDate(date);
-        patientService.addAppointment(patient.getId(), professional.getId(), date);
-        appointmentService.saveOrUpdate(appointment);
-        return new ResponseEntity<>(appointmentToAppointmentDto.convert(appointment), HttpStatus.OK);
+        Patient patient = patientService.get(appointmentDto.getPatientId());
+
+        Appointment newAppointment = appointmentDtoToAppointment.convert(appointmentDto);
+        newAppointment.setPatient(patient);
+        newAppointment.setProfessional(professional);
+
+
+        //patientService.addAppointment(appointmentDto.getPatientId(), appointmentDto.getProfessionalId(), appointmentDto.getDate());
+        Appointment persistedAppointment = appointmentService.saveOrUpdate(newAppointment);
+
+        professional.addAppointment(persistedAppointment);
+
+        return new ResponseEntity<>(appointmentToAppointmentDto.convert(persistedAppointment), HttpStatus.OK);
     }
+
+
+
+
 
     @RequestMapping(method = RequestMethod.DELETE, path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<AppointmentDto> deleteAppointment(@PathVariable Integer appointmentId) {

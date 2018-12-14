@@ -68,17 +68,14 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Transactional
-    @Override
-    public int addAppointment(Integer patientId, Integer professionalId, String date) {
-        Patient patient = patientDao.findById(patientId);
-        Professional professional = professionalDao.findById(professionalId);
-        Appointment appointment = new Appointment(patient, professional);
-        appointment.setDate(date);
-        patient.addAppointment(appointment);
-        //professional.addAppointment(appointment);
-        appointment = appointmentService.saveOrUpdate(appointment);
-        //patientDao.saveOrUpdate(patient);
-        return appointment.getId();
+    public Appointment addAppointment(Appointment appointment) {
+
+//        patient.addAppointment(appointment);
+//        //professional.addAppointment(appointment);
+//        appointment = appointmentService.saveOrUpdate(appointment);
+//        //patientDao.saveOrUpdate(patient);
+//        return appointment.getId();
+        return null;
     }
 
     @Transactional

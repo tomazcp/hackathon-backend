@@ -48,7 +48,7 @@ public class ProfessionalServiceImpl implements ProfessionalService {
 
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     @Override
     public List<Appointment> listAppointments(Integer id) {
         return new ArrayList<>(professionalDao.findById(id).getAppointments());

@@ -17,6 +17,7 @@ public interface ProfessionalService {
 
     List<Patient> listPatients(Integer id);
 
+
     /**
      * Gets a list of the customers
      *

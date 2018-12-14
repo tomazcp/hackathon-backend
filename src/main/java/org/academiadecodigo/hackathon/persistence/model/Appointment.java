@@ -17,10 +17,10 @@ public class Appointment extends AbstractModel {
     public Appointment() {
     }
 
-    public Appointment(Patient patient, Professional professional) {
-        this.patient = patient;
-        this.professional = professional;
-    }
+//    public Appointment(Patient patient, Professional professional, String date) {
+//        this.patient = patient;
+//        this.professional = professional;
+//    }
 
     public String getDate() {
         return date;

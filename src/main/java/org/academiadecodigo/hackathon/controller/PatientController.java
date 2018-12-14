@@ -5,6 +5,7 @@ import org.academiadecodigo.hackathon.converters.PatientToPatientDto;
 import org.academiadecodigo.hackathon.dto.PatientDto;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.service.patient.PatientService;
+import org.academiadecodigo.hackathon.service.session.SessionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,6 +23,12 @@ public class PatientController {
     private PatientService patientService;
     private PatientDtoToPatient patientDtoToPatient;
     private PatientToPatientDto patientToPatientDto;
+    private SessionService sessionService;
+
+    @Autowired
+    public void setSessionService(SessionService sessionService) {
+        this.sessionService = sessionService;
+    }
 
     @Autowired
     public void setPatientService(PatientService patientService) {
@@ -45,7 +52,8 @@ public class PatientController {
      * @param id            the patient id
      * @return the response entity
      */
-    @PutMapping(path = {"/{id}"},
+    @PutMapping(
+            path = {"/{id}"},
             produces = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<PatientDto> editPatient(@RequestBody PatientDto patientDto, @PathVariable Integer id) {
@@ -60,7 +68,10 @@ public class PatientController {
 
         patientDto.setId(id);
 
-        patientService.saveOrUpdate(patientDtoToPatient.convert(patientDto));
-        return new ResponseEntity<>(patientDto, HttpStatus.OK);
+        Patient editedPatient =  patientService.saveOrUpdate(patientDtoToPatient.convert(patientDto));
+
+        sessionService.setAccessingPacient(editedPatient);
+
+        return new ResponseEntity<>(patientToPatientDto.convert(editedPatient), HttpStatus.OK);
     }
 }
