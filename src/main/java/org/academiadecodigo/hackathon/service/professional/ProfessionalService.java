@@ -13,5 +13,12 @@ public interface ProfessionalService {
 
     List<Patient> listPatients(Integer id);
 
+    /**
+     * Gets a list of the customers
+     *
+     * @return the customers list
+     */
+    List<Professional> listProfessionals();
+
     //List<Appointment> listAppointments(Integer id);
 }

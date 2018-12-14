@@ -37,6 +37,13 @@ public class ProfessionalServiceImpl implements ProfessionalService {
         return new ArrayList<>(professionalDao.findById(id).getPatients());
     }
 
+    @Override
+    public List<Professional> listProfessionals() {
+
+        return professionalDao.findAll();
+
+    }
+
 //    @Override
 //    public List<Appointment> listAppointments(Integer id) {
 //

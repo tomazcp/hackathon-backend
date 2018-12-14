@@ -93,15 +93,14 @@ public class Patient extends AbstractModel {
      */
     @Override
     public String toString() {
-
-        // printing recipients with lazy loading
-        // and no session will cause issues
-        return "Customer{" +
-                "firstName='" + name + '\'' +
-                "gender='" + gender + '\'' +
+        return "Patient{" +
+                "name='" + name + '\'' +
                 ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", gender='" + gender + '\'' +
+                ", state=" + state +
                 ", professional=" + professional +
-                "} " + super.toString();
+                '}';
     }
 
 }
