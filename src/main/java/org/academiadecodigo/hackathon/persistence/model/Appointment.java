@@ -20,4 +20,20 @@ public class Appointment extends AbstractModel {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public Professional getProfessional() {
+        return professional;
+    }
+
+    public void setProfessional(Professional professional) {
+        this.professional = professional;
+    }
 }
