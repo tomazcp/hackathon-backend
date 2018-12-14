@@ -7,11 +7,11 @@ import java.util.List;
 @Table(name = "professional")
 public class Professional extends AbstractModel {
 
-    private String firstName;
-    private String lastName;
-    private Gender gender;
+    private String name;
+    private String gender;
     private String email;
     private String phone;
+    private String superPower;
 
     @OneToMany(
             fetch = FetchType.EAGER,
@@ -20,47 +20,35 @@ public class Professional extends AbstractModel {
     )
     private List<Patient> patients;
 
+    @OneToMany(
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL
+    )
+    private List<Appointment> appointments;
+
     /**
      * Gets the first name of the professional
      *
      * @return the professional last name
      */
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
     /**
      * Sets the first name of the professional
      *
-     * @param firstName the name to set
+     * @param name the name to set
      */
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    /**
-     * Gets the last name of the professional
-     *
-     * @return the professional last name
-     */
-    public String getLastName() {
-        return lastName;
-    }
-
-    /**
-     * Sets the last name of the professional
-     *
-     * @param lastName the name to set
-     */
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -109,9 +97,45 @@ public class Professional extends AbstractModel {
         return patients;
     }
 
-    public void setPatients(Patient patient) {
+    public List<Appointment> getAppointments() {
+        return appointments;
+    }
+
+    public String getSuperPower() {
+        return superPower;
+    }
+
+    public void setAppointments(List<Appointment> appointments) {
+        this.appointments = appointments;
+    }
+
+    public void addAppointment(Appointment appointment) {
+        appointments.add(appointment);
+        appointment.setProfessional(this);
+    }
+
+    public void removeAppointment(Appointment appointment) {
+        appointments.remove(appointment);
+        appointment.setProfessional(null);
+    }
+
+    public void setPatients(List<Patient> patients) {
         this.patients = patients;
     }
 
+    public void setSuperPower(String superPower) {
+        this.superPower = superPower;
+    }
 
+    @Override
+    public String toString() {
+        return "Professional{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", patients=" + patients +
+                ", super power=" + superPower +
+                '}';
+    }
 }

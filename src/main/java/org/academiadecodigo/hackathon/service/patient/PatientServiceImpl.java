@@ -6,13 +6,14 @@ import org.academiadecodigo.hackathon.persistence.dao.ProfessionalDao;
 import org.academiadecodigo.hackathon.persistence.model.Appointment;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
+import org.academiadecodigo.hackathon.service.appointment.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+
 
 @Service
 public class PatientServiceImpl implements PatientService {
@@ -20,6 +21,7 @@ public class PatientServiceImpl implements PatientService {
     private PatientDao patientDao;
     private ProfessionalDao professionalDao;
     private AppointmentDao appointmentDao;
+    private AppointmentService appointmentService;
 
     @Autowired
     public void setPatientDao(PatientDao patientDao) {
@@ -34,6 +36,11 @@ public class PatientServiceImpl implements PatientService {
     @Autowired
     public void setAppointmentDao(AppointmentDao appointmentDao) {
         this.appointmentDao = appointmentDao;
+    }
+
+    @Autowired
+    public void setAppointmentService(AppointmentService appointmentService) {
+        this.appointmentService = appointmentService;
     }
 
     @Override
@@ -62,14 +69,19 @@ public class PatientServiceImpl implements PatientService {
 
     @Transactional
     @Override
-    public int addAppointment(Integer patientId, Integer professionalId, Date date) {
+    public int addAppointment(Integer patientId, Integer professionalId, String date) {
         Patient patient = patientDao.findById(patientId);
         Professional professional = professionalDao.findById(professionalId);
         Appointment appointment = new Appointment(patient, professional);
         appointment.setDate(date);
+        patient.addAppointment(appointment);
+        //professional.addAppointment(appointment);
+        appointment = appointmentService.saveOrUpdate(appointment);
+        //patientDao.saveOrUpdate(patient);
         return appointment.getId();
     }
 
+    @Transactional
     @Override
     public void removeAppointment(Integer patientId, Integer professionalId, Integer appointmentId) {
         Patient patient = patientDao.findById(patientId);
@@ -80,11 +92,10 @@ public class PatientServiceImpl implements PatientService {
 
     }
 
-//    @Override
-//    public List<Appointment> listAppointments(Integer id) {
-//
-//        Patient patient = patientDao.findById(id);
-//
-//        return new ArrayList<>(patient.getAppointments());
-//    }
+    @Transactional
+    @Override
+    public List<Appointment> listAppointments(Integer id) {
+
+        return new ArrayList<>(patientDao.findById(id).getAppointments());
+    }
 }

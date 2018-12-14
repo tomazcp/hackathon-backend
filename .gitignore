@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/osx,linux,windows,intellij+all
-# Edit at https://www.gitignore.io/?templates=osx,linux,windows,intellij+all
+# Created by https://www.gitignore.io/api/osx,maven,linux,windows,intellij+all
+# Edit at https://www.gitignore.io/?templates=osx,maven,linux,windows,intellij+all
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -98,6 +98,18 @@ modules.xml
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
 ### OSX ###
 # General
 .DS_Store
@@ -151,4 +163,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/osx,linux,windows,intellij+all
+# End of https://www.gitignore.io/api/osx,maven,linux,windows,intellij+all
