@@ -2,11 +2,6 @@ package org.academiadecodigo.hackathon.controller.appointment;
 
 import org.academiadecodigo.hackathon.converters.*;
 import org.academiadecodigo.hackathon.dto.AppointmentDto;
-<<<<<<< HEAD
-import org.academiadecodigo.hackathon.dto.PatientDto;
-import org.academiadecodigo.hackathon.dto.ProfessionalDto;
-=======
->>>>>>> 59b8077f2943d9fe2a019ea85da1f984018c1fff
 import org.academiadecodigo.hackathon.persistence.model.Appointment;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
