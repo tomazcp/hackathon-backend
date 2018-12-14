@@ -1,11 +1,7 @@
 package org.academiadecodigo.hackathon.controller.appointment;
 
-import org.academiadecodigo.hackathon.converters.AppointmentDtoToAppointment;
-import org.academiadecodigo.hackathon.converters.AppointmentToAppointmentDto;
-import org.academiadecodigo.hackathon.converters.PatientDtoToPatient;
-import org.academiadecodigo.hackathon.converters.PatientToPatientDto;
+import org.academiadecodigo.hackathon.converters.*;
 import org.academiadecodigo.hackathon.dto.AppointmentDto;
-import org.academiadecodigo.hackathon.dto.PatientDto;
 import org.academiadecodigo.hackathon.persistence.model.Appointment;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
@@ -62,10 +58,10 @@ public class AppointmentController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<AppointmentDto> addAppointment(@RequestBody PatientDto patientDto, @RequestBody ProfessionalDto professionalDto, Date date) {
+    public ResponseEntity<AppointmentDto> addAppointment(@PathVariable Integer patientId, @PathVariable Integer professionalId, Date date) {
 
-        Patient patient = patientService.saveOrUpdate(patientDtoToPatient.convert(patientDto));
-        Professional professional = professionalService.saveOrUpdate(professionalDtoToProfessional.convert(professionalDto));
+        Patient patient = patientService.saveOrUpdate(patientService.get(patientId));
+        Professional professional = professionalService.saveOrUpdate(professionalService.get(professionalId));
         Appointment appointment = new Appointment(patient, professional);
         appointment.setDate(date);
         patientService.addAppointment(patient.getId(), professional.getId(), date);
