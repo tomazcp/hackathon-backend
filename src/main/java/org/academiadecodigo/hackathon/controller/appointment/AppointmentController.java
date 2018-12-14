@@ -14,7 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -58,14 +57,14 @@ public class AppointmentController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<AppointmentDto> addAppointment(@PathVariable Integer patientId, @PathVariable Integer professionalId, Date date) {
+    public ResponseEntity<AppointmentDto> addAppointment(@RequestBody AppointmentDto appointmentDto, String date) {
 
-        Patient patient = patientService.saveOrUpdate(patientService.get(patientId));
-        Professional professional = professionalService.saveOrUpdate(professionalService.get(professionalId));
+        Patient patient = patientService.get(appointmentDto.getPatientId());
+        Professional professional = professionalService.get(appointmentDto.getProfessionalId());
         Appointment appointment = new Appointment(patient, professional);
         appointment.setDate(date);
         patientService.addAppointment(patient.getId(), professional.getId(), date);
-
+        appointmentService.saveOrUpdate(appointment);
         return new ResponseEntity<>(appointmentToAppointmentDto.convert(appointment), HttpStatus.OK);
     }
 

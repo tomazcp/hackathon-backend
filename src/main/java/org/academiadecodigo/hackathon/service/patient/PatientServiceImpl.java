@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 
@@ -64,17 +63,19 @@ public class PatientServiceImpl implements PatientService {
 
     @Transactional
     @Override
-    public int addAppointment(Integer patientId, Integer professionalId, Date date) {
+    public int addAppointment(Integer patientId, Integer professionalId, String date) {
         Patient patient = patientDao.findById(patientId);
         Professional professional = professionalDao.findById(professionalId);
         Appointment appointment = new Appointment(patient, professional);
         appointment.setDate(date);
         patient.addAppointment(appointment);
-        professional.addAppointment(appointment);
-        appointmentService.saveOrUpdate(appointment);
+        //professional.addAppointment(appointment);
+        appointment = appointmentService.saveOrUpdate(appointment);
+        //patientDao.saveOrUpdate(patient);
         return appointment.getId();
     }
 
+    @Transactional
     @Override
     public void removeAppointment(Integer patientId, Integer professionalId, Integer appointmentId) {
         Patient patient = patientDao.findById(patientId);
@@ -85,6 +86,7 @@ public class PatientServiceImpl implements PatientService {
 
     }
 
+    @Transactional
     @Override
     public List<Appointment> listAppointments(Integer id) {
 

@@ -12,18 +12,21 @@ public class Appointment extends AbstractModel {
     private Patient patient;
     @OneToOne
     private Professional professional;
-    private Date date;
+    private String date;
+
+    public Appointment() {
+    }
 
     public Appointment(Patient patient, Professional professional) {
         this.patient = patient;
         this.professional = professional;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

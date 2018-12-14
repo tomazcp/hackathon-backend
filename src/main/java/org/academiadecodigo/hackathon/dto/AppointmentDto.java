@@ -3,18 +3,17 @@ package org.academiadecodigo.hackathon.dto;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
 
-import java.util.Date;
 
 public class AppointmentDto {
 
 
     private Integer id;
 
-    private Professional professional;
+    private Integer professionalId;
 
-    private Patient patient;
+    private Integer patientId;
 
-    private Date date;
+    private String date;
 
 
     public Integer getId() {
@@ -25,36 +24,38 @@ public class AppointmentDto {
         this.id = id;
     }
 
-    public Professional getProfessional() {
-        return professional;
+    public Integer getProfessionalId() {
+        return professionalId;
     }
 
-    public void setProfessional(Professional professional) {
-        this.professional = professional;
+    public void setProfessionalId(Integer professionalId) {
+        this.professionalId = professionalId;
     }
 
-    public Patient getPatient() {
-        return patient;
+    public Integer getPatientId() {
+        return patientId;
     }
 
-    public void setPatient(Patient patient) {
-        this.patient = patient;
+    public void setPatientId(Integer patientId) {
+        this.patientId = patientId;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
+
 
     @Override
     public String toString() {
         return "AppointmentDto{" +
-                "professional=" + professional +
-                ", patient=" + patient +
-                ", date=" + date +
+                "id=" + id +
+                ", professionalId=" + professionalId +
+                ", patientId=" + patientId +
+                ", date='" + date + '\'' +
                 '}';
     }
 }
