@@ -18,6 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/appointment")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class AppointmentController {
 
     private PatientService patientService;
@@ -32,7 +33,6 @@ public class AppointmentController {
 
     private ProfessionalDtoToProfessional professionalDtoToProfessional;
     private ProfessionalToProfessionalDto professionalToProfessionalDto;
-
 
 
     @RequestMapping(method = RequestMethod.GET, path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -75,7 +75,6 @@ public class AppointmentController {
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
 
 
     // GETTERS AND SETTERS

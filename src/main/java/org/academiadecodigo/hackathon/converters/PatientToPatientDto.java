@@ -21,6 +21,7 @@ public class PatientToPatientDto extends AbstractConverter<Patient, PatientDto> 
         patientDto.setName(patient.getName());
         //patientDto.setState(patient.getState());
         patientDto.setEmail(patient.getEmail());
+        patientDto.setGender(patient.getGender());
 
         return patientDto;
     }
