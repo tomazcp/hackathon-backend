@@ -1,11 +1,9 @@
 package org.academiadecodigo.hackathon.controller.appointment;
 
-import org.academiadecodigo.hackathon.converters.AppointmentDtoToAppointment;
-import org.academiadecodigo.hackathon.converters.AppointmentToAppointmentDto;
-import org.academiadecodigo.hackathon.converters.PatientDtoToPatient;
-import org.academiadecodigo.hackathon.converters.PatientToPatientDto;
+import org.academiadecodigo.hackathon.converters.*;
 import org.academiadecodigo.hackathon.dto.AppointmentDto;
 import org.academiadecodigo.hackathon.dto.PatientDto;
+import org.academiadecodigo.hackathon.dto.ProfessionalDto;
 import org.academiadecodigo.hackathon.persistence.model.Appointment;
 import org.academiadecodigo.hackathon.persistence.model.Patient;
 import org.academiadecodigo.hackathon.persistence.model.Professional;
@@ -80,15 +78,6 @@ public class AppointmentController {
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-
-
-
-
-
-
-
-
 
 
 
